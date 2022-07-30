@@ -1,10 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+/* je suis un test */
+
 .App {
   text-align: center;
+  max-width: calc(100% - 10rem);
+  margin: auto;
+  /* overflow: hidden; */
 }
 
+h3 {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.panneaux-arrow-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.img2 {
+  /* margin-top: 200rem; */
+  height: 10rem;
+  width: 10rem;
+  /* background-color: red; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  /* background-color: green; */
+  justify-content: space-between;
+  height: 6rem;
+}
+
+nav {
+  display: flex;
+  gap: 4.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+.box {
+  height: 10rem;
+  width: 10rem;
+  /* background-color: red; */
+}
+
+.logo-prolyfe {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.home {
+  /* background-color: green; */
+  display: flex;
+}
+
+.home-presentation {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  flex-basis: 60%;
+  /* background-color: purple; */
+  text-align: left;
+}
+
+.home-name {
+  font-size: 5.125rem;
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  opacity: 0;
+}
+
+.home-job {
+  font-size: 2.5rem;
+  font-family: 'Grandstander', cursive;
+  color: #352070;
+  opacity: 0;
+}
+
+/* .home-hola {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 4.18rem;
+  transform: rotate(-90deg);
+  background-color: blue;
+  margin: 0;
+  height: 6rem;
+  margin-top: 1.66rem;
+  margin-bottom: 1.66rem;
+} */
+
+.home-passion {
+  font-size: 1.66rem;
+  font-family: 'Helvetica';
+  color: #5B5766;
+  opacity: 0;
+}
+
+.home-visuel {
+  flex-basis: 40%;
+  /* background-color: yellow */
+  position: relative;
+}
+
+.patate {
+  height: 35rem;
+}
+
+.circle1 {
+  height: 40rem;
+  width: 40rem;
+  position: absolute;
+  object-fit: contain;
+  z-index: -1;
+  top: -20;
+  left: 0;
+}
+
+.poteau-container {
+  display: inline-flex;
+  /* background-color: blue; */
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  /* margin-top: -10rem; */
+  /* margin-left: -45rem; */
+  position: relative;
+  /* background-color: red; */
+  height: 300rem;
+  margin-top: -10rem;
+}
+.poteau {
+  height: 100%;
+  width: 0.5rem;
+  background-color: #565151;
+  position: relative;
+  /* display: inline-flex; */
+  margin-top: -1rem;
+}
+
+.poteau-ball {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  background-color: #565151;
+  /* position: absolute;
+  top: -500;
+  z-index: 2; */
+}
+
+.poteau-panneaux {
+  box-sizing: border-box;
+  border: none;
+  /* height: 3.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  /* background-color: green; */
+  width: 14rem;
+  height: 5rem;
+  position: absolute;
+  top: 1%;
+  left: 54%;
+  transform-origin: left;
+}
+
+.poteau-panneaux-left {
+  box-sizing: border-box;
+  border: none;
+  /* height: 3.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  /* background-color: green; */
+  width: 14rem;
+  height: 5rem;
+  position: absolute;
+  top: 2.2%;
+  left: 46%;
+  transform: rotate(180deg);
+  transform-origin: left;
+}
+
+.poteau-panneaux-third {
+  box-sizing: border-box;
+  border: none;
+  /* height: 3.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  /* background-color: green; */
+  width: 14rem;
+  height: 5rem;
+  position: absolute;
+  top: 3.7%;
+  left: 54%;
+  transform-origin: left;
+}
+.panneaux {
+  /* width: 100%;
+  height: 100%; */
+  /* margin-left: 7.25rem;
+  margin-top: 7rem; */
+  z-index: 2;
+  position: absolute;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* top: 300%;
+  left: 40.5%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.panneaux-text {
+  position: absolute;
+  font-family: 'Grandstander', cursive;
+  z-index: 4;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: bold;
+}
+
+.panneaux-text-left {
+  position: absolute;
+  font-family: 'Grandstander', cursive;
+  z-index: 4;
+  top: 35%;
+  left: -5%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: bold;
+  transform: rotate(180deg)
+}
+
+.separator {
+  /* width: 100%; */
+  height: 0.5rem;
+  background-color: #565151;
+  z-index: 1;
+  color: white;
+  position: relative;
+  width: 100vw;
+  position: absolute;
+  top: 10%;
+  left: 54%;
+}
+
+.container-all-poteau {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10rem;
+}
+
+.main-content {
+  background-color: teal;
+  /* flex-basis: 10%; */
+}
+
+.separator-vertical-first {
+  position: absolute;
+  top: 10%;
+  left: 1300%;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.separator-vertical-second {
+  position: absolute;
+  top: 10%;
+  left: 1900%;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.panneaux-indication {
+  position: absolute;
+  width: 16rem;
+  height: 6rem;
+  background-color: #352070;
+  border: 0.5rem white solid;
+  color: white;
+  font-family: 'Grandstander', cursive;
+  top: 11.25%;
+  left: 1180%;
+  z-index: 1;
+  padding-top: 1rem;
+  box-shadow: 0px 4px 18px rgba(133, 93, 247, 0.19);
+
+}
+
+.panneaux-indication h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.competences-section {
+  position: absolute;
+  /* width: 50%; */
+  /* height: 6rem; */
+  /* background-color: pink; */
+  top: 16%;
+  left: 390%;
+  display: flex;
+  gap: 1rem;
+  width: 50rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.competences-card {
+  width: 15rem;
+  height: 8rem;
+  border-radius: 1rem;
+  background-color: gray;
+  /* z-index: 999999; */
+  /* height: 6rem; */
+  /* top: 25%; */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.competences-card-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.panneaux-indication-project {
+  position: absolute;
+  width: 16rem;
+  height: 6rem;
+  background-color: #352070;
+  border: 0.5rem white solid;
+  color: white;
+  font-family: 'Grandstander', cursive;
+  top: 29.25%;
+  left: 1180%;
+  z-index: 1;
+  padding-top: 1rem;
+  box-shadow: 0px 4px 18px rgba(133, 93, 247, 0.19);
+}
+
+.separator-project {
+  height: 0.5rem;
+  background-color: #565151;
+  z-index: 1;
+  color: white;
+  position: relative;
+  width: 100vw;
+  position: absolute;
+  top: 28%;
+  left: 54%;
+}
+
+.separator-vertical-first-project {
+  position: absolute;
+  top: 28%;
+  left: 1300%;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.separator-vertical-second-project {
+  position: absolute;
+  top: 28%;
+  left: 1900%;
+  height: 4rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+
+.project-section {
+  position: absolute;
+  /* width: 50%; */
+  /* height: 6rem; */
+  /* background-color: mediumspringgreen; */
+  top: 34%;
+  left: 390%;
+  display: flex;
+  gap: 4rem;
+  width: 50rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 1rem;
+  background-color: gray;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0px 4px 18px rgba(133, 93, 247, 0.19);
+}
+
+.project-card-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card p {
+  color: #222222;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  font-family: 'Grandstander', cursive;
+  font-weight: bold;
+}
+
+/* Contact */
+.separator-contact {
+  height: 0.5rem;
+  background-color: #565151;
+  z-index: 1;
+  color: white;
+  position: relative;
+  width: 100vw;
+  position: absolute;
+  top: 58%;
+  left: 54%;
+}
+
+.separator-vertical-first-contact {
+  position: absolute;
+  top: 58%;
+  left: 1300%;
+  height: 7.5rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.separator-vertical-second-contact {
+  position: absolute;
+  top: 58%;
+  left: 1900%;
+  height: 7.5rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.separator-vertical-midle-contact {
+  position: absolute;
+  top: 59.5%;
+  left: 1590%;
+  height: 3rem;
+  width: 0.5rem;
+  background-color: #565151;
+}
+
+.panneaux-indication-avion-contact {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(240, 124, 94, 1);
+  border: 0.25rem white solid;
+  color: white;
+  font-family: 'Grandstander', cursive;
+  top: 58.5%;
+  left: 1515%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 18px rgba(133, 93, 247, 0.19);
+  /* position: relative; */
+}
+
+.panneaux-indication-contact {
+  padding-top: 1rem;
+  position: absolute;
+  width: 16rem;
+  height: 6rem;
+  background-color: #352070;
+  border: 0.5rem white solid;
+  color: white;
+  font-family: 'Grandstander', cursive;
+  top: 60%;
+  left: 1180%;
+  z-index: 1;
+  box-shadow: 0px 4px 18px rgba(133, 93, 247, 0.19);
+}
+
+.panneaux-indication-avion-icon {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+.project-card-image2 {
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  position: absolute;
+
+}
+
+/* Contact */
+
+.contact-section {
+  position: absolute;
+  /* width: 50%; */
+  /* height: 6rem; */
+  /* background-color: coral; */
+  top: 65%;
+  left: 390%;
+  display: flex;
+  gap: 4rem;
+  width: 56rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ticket-container {
+  /* background-color: #855DF7; */
+  height: 23rem;
+  width: 100%;
+  display: flex;
+}
+
+.ticket-small-section {
+  flex-basis: 30%;
+  /* background-color: red; */
+  background-color: #855DF7;
+  border-radius: 2rem;
+  border-right: 0.25rem dashed white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-logo {
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 100%;
+}
+
+.rayaneair {
+  font-family: 'Grandstander', cursive;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.ticket-main-section {
+  flex-basis: 80%; 
+  background-color: #855DF7;
+  /* background-color: blue;  */
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellowgreen; */
+  flex-basis: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+.ticket-form .email {
+  background: #EEECEC;
+  border-radius: 14px;
+  height: 2.75rem;
+  border: none;
+  width: 80%;
+  font-family: 'Helvetica'; 
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.ticket-form .message {
+  background: #EEECEC;
+  border-radius: 14px;
+  height: 7rem;
+  border: none;
+  width: 80%;
+  font-family: 'Helvetica';
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.ticket-form .message::placeholder, .ticket-form .email::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(86, 81, 81, 0.6);
+  font-family: 'Helvetica';  
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+
+.ticket-form .message:focus, .ticket-form .email:focus {
+  outline: none;
+}
+
+.ticket-form button {
+  width: 80%;
+  color: rgba(34, 34, 34, 1);
+  background-color: white;
+  border: none;
+  border-radius: 14px;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boarding-pass {
+  color: white;
+  font-family: 'Grandstander', cursive;
+  font-size: 2rem;
+  transform: rotate(90deg);
+  transform-origin: center;
+  /* width: 100%; */
+  /* height: 8rem; */
+  /* background-color: yellow; */
+  /* width: 80%; */
+  /* height: 12rem; */
+  width: 15%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.envoyer-avion-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  /* background-color: red; */
+  z-index: 99999999999;
+  transform: rotate(130deg);
+} 
+
+.codebar {
+  height: 85%;
+  width: 85%;
+  margin-top: 4rem;
+}
+
+.language-hello {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 8rem;
+  /* transform: rotate(360deg); */
+  /* background-color: blue; */
+  width: 40rem;
+  position: absolute;
+  left: 160%;
+  top: 3.5%;
+  opacity: 10%;
+}
+
+.language-hello2 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 7rem;
+  /* transform: rotate(360deg); */
+  /* background-color: blue; */
+  width: 8rem;
+  position: absolute;
+  left: -600%;
+  top: 20%;
+  opacity: 10%;
+}
+
+.language-hello3 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 3rem;
+  /* transform: rotate(360deg); */
+  /* background-color: blue; */
+  width: 8rem;
+  position: absolute;
+  left: 2800%;
+  top: 8%;
+  opacity: 10%;
+}
+
+.language-hello4 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 5rem;
+  /* transform: rotate(360deg); */
+  /* background-color: blue; */
+  width: 24rem;
+  position: absolute;
+  left: 2300%;
+  top: 23%;
+  opacity: 10%;
+}
+
+.language-hello5 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 5rem;
+  transform: rotate(-90deg);
+  /* background-color: blue; */
+  /* width: 5rem; */
+  position: absolute;
+  left: -600%;
+  top: 40%;
+  opacity: 10%;
+}
+
+.language-hello6 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 5rem;
+  transform: rotate(90deg);
+  /* background-color: blue; */
+  width: 24rem;
+  position: absolute;
+  left: 2300%;
+  top: 50%;
+  opacity: 10%;
+}
+
+.language-hello7 {
+  font-family: 'Grandstander', cursive;
+  color: #855DF7;
+  font-size: 5rem;
+  /* background-color: blue; */
+  width: 24rem;
+  position: absolute;
+  left: 2300%;
+  top: 72%;
+  opacity: 10%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
